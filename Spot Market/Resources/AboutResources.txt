@@ -10,6 +10,7 @@ would keep its resources in the "Resources" directory of the application:
 Resources/
     drawable/
         icon.png
+		logo.png
 
     layout/
         main.axml
