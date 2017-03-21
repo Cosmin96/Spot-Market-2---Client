@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</LinearLayout>
+    android:layout_height="match_parent"
+    android:background="#009CDE"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Bicycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textColor="#fff"
+        android:textSize="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="100px"
+        android:textStyle="normal"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:text="     "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="#fff"
+        android:textSize="50px"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="100px"
+        android:textStyle="normal"
+        android:gravity="center_horizontal" />
+    <Button
+        android:text="Find Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView2"
+        android:id="@+id/button1"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="200px"
+        android:textColor="#fff"
+        android:textSize="30px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/redbutton"
+        style="@style/button_text" />
+</RelativeLayout>

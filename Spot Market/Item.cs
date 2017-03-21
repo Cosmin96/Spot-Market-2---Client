@@ -12,13 +12,13 @@ using Android.Widget;
 
 namespace Spot_Market
 {
-    [Activity(Label = "Activity1")]
-    public class MainMenu : Activity
+    [Activity(Label = "Item")]
+    public class Item : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.MainMenu);
+            SetContentView(Resource.Layout.Items);
             // Create your application here
         }
     }

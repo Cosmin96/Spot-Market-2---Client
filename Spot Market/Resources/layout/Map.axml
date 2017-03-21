@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:id="@+id/imageView1"
-        android:src="@drawable/map_beacons"
+        android:src="@drawable/map"
         android:layout_height="400px"
         android:layout_marginTop="100px" />
     <TextView
@@ -32,7 +32,7 @@
         android:id="@+id/textView2"
         android:layout_centerVertical="false"
         android:textColor="#ffffff"
-        android:textSize="30"
+        android:textSize="30px"
         android:layout_marginLeft="100px"
         android:layout_marginTop="30px" />
     <TextView
@@ -44,7 +44,7 @@
         android:id="@+id/textView3"
         android:layout_centerVertical="false"
         android:textColor="#ffffff"
-        android:textSize="30"
+        android:textSize="30px"
         android:layout_marginLeft="100px"
         android:layout_marginTop="30px" />
     <TextView
@@ -55,7 +55,7 @@
         android:id="@+id/textView4"
         android:layout_centerVertical="false"
         android:textColor="#ffffff"
-        android:textSize="30"
+        android:textSize="30px"
         android:layout_marginLeft="100px"
         android:layout_marginTop="30px" />
     <TextView
@@ -67,7 +67,7 @@
         android:id="@+id/textView5"
         android:layout_centerVertical="false"
         android:textColor="#ffffff"
-        android:textSize="30"
+        android:textSize="30px"
         android:layout_marginLeft="100px"
         android:layout_marginTop="30px" />
     <TextView
@@ -78,10 +78,10 @@
         android:id="@+id/textView6"
         android:layout_centerVertical="false"
         android:textColor="#ffffff"
-        android:textSize="30"
+        android:textSize="30px"
         android:layout_marginLeft="100px"
         android:layout_marginTop="30px"
-        android:layout_marginBottom="20" />
+        android:layout_marginBottom="20px" />
     <TextView
         android:text="B"
         android:layout_width="wrap_content"
@@ -91,7 +91,7 @@
         android:id="@+id/textView7"
         android:layout_centerVertical="false"
         android:textColor="#ffffff"
-        android:textSize="30"
+        android:textSize="30px"
         android:layout_marginLeft="100px"
         android:layout_marginTop="30px" />
     <Button

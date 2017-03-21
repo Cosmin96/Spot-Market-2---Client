@@ -4,7 +4,7 @@ using Android.OS;
 
 namespace Spot_Market
 {
-    [Activity(Label = "Spot_Market", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Spot Market", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         
@@ -12,12 +12,17 @@ namespace Spot_Market
         {
 
             base.OnCreate(bundle);
+            SetContentView(Resource.Layout.Login);
             Button login = FindViewById<Button>(Resource.Id.button1); //Declare login button
-
+            Button register = FindViewById<Button>(Resource.Id.button2);
             // Set our view from the "main" layout resource
-            SetContentView (Resource.Layout.Main);
+
             login.Click += delegate {
-                StartActivity(typeof(MainMenu)); //Load second activity
+                StartActivity(typeof(Map)); //Load second activity
+            };
+            register.Click += delegate
+            {
+                StartActivity(typeof(Register));
             };
         }
     }
