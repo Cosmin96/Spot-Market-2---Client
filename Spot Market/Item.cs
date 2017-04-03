@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Spot_Market
 {
-    [Activity(Label = "Item")]
+    [Activity(Label = "Items")]
     public class Item : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

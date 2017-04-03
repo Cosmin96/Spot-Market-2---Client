@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#009CDE"
-    android:minWidth="25px"
-    android:minHeight="25px">
+    android:minWidth="25dp"
+    android:minHeight="25dp"
+    android:id="@+id/relativeLayout1">
     <TextView
         android:text="Microsoft Spot Market"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -13,12 +14,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
         android:textColor="#fff"
-        android:textSize="100px"
+        android:textSize="40dp"
         android:textStyle="normal"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:textAlignment="center" />
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="300px"
+        android:layout_height="200dp"
         android:layout_below="@id/textView1"
         android:id="@+id/imageView1"
         android:src="@drawable/logo" />
@@ -30,12 +32,13 @@
         android:layout_below="@id/imageView1"
         android:layout_alignParentBottom="false"
         android:layout_alignTop="@id/imageView1"
-        android:layout_marginTop="270px"
+        android:layout_marginTop="180dp"
         android:textColor="#fff"
-        android:minWidth="500px"
-        android:layout_marginLeft="140px"
-        android:text="Username"
-        android:layout_centerHorizontal="true" />
+        android:minWidth="500dp"
+        android:layout_marginLeft="140dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="E-mail"
+        android:hint="E-mail" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,13 +46,14 @@
         android:id="@+id/editText2"
         android:layout_alignParentBottom="false"
         android:layout_alignTop="@id/editText1"
-        android:layout_marginTop="90px"
+        android:layout_marginTop="30dp"
         android:textColor="#fff"
-        android:minWidth="500px"
-        android:layout_marginLeft="140px"
-        android:text="Password"
+        android:minWidth="500dp"
+        android:layout_marginLeft="140dp"
         android:layout_below="@id/editText1"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:layout_marginBottom="20dp" />
     <Button
         android:text="Register"
         android:layout_width="wrap_content"
@@ -57,9 +61,9 @@
         android:layout_below="@id/editText2"
         android:id="@+id/button1"
         android:gravity="center_horizontal"
-        android:layout_marginTop="50px"
+        android:layout_marginTop="100dp"
         android:textColor="#fff"
-        android:textSize="70px"
+        android:textSize="30dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/redbutton"
         style="@style/button_text" />
