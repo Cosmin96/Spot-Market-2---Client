@@ -19,7 +19,21 @@ namespace Spot_Market
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Items);
-            // Create your application here
+
+            Button button = FindViewById<Button>(Resource.Id.button1);
+            Button button2 = FindViewById<Button>(Resource.Id.button2);
+            button.Click += delegate
+            {
+                var map = new Intent(this, typeof(Map));
+                map.PutExtra("Data", "bicycle");
+                StartActivity(map);
+            };
+            button2.Click += delegate
+            {
+                var map = new Intent(this, typeof(Map));
+                map.PutExtra("Data", "book");
+                StartActivity(map);
+            };
         }
     }
 }

@@ -53,10 +53,25 @@ namespace Spot_Market
 
             //Draw point at x=500, y=100, radius=10 
             //drawPointOnMap(413, 379);
-            
+    
             FindAllBeacons _findAllBeacons = new FindAllBeacons(this);
             _findAllBeacons.FindBeacons(this);
             //drawPointOnMap(413, 379);
+
+            //Check Data received by Intent in Item Activity
+            string data = Intent.GetStringExtra("Data");
+            if (data == "bicycle")
+            {
+                int[] x = new int[] { 100, 200, 400 };
+                int[] y = new int[] { 100, 150, 50 };
+                highlightZone(x, y);
+            }
+            if (data == "book")
+            {
+                int[] x = new int[] { 400, 200, 400, 325 };
+                int[] y = new int[] { 100, 150, 400, 200 };
+                highlightZone(x, y);
+            }
 
             Button item = FindViewById<Button>(Resource.Id.button1); //Declare item button
             item.Click += delegate
@@ -76,8 +91,27 @@ namespace Spot_Market
 
             GC.Collect();
 
-            Log.Debug(TAG, "drawin: {0}, {1}", x, y);
+            Log.Debug(TAG, "drawing: {0}, {1}", x, y);
             canvas.DrawCircle(x, y, 10, paint);
+        }
+
+        public static void highlightZone(int[] x, int[] y)
+        {
+            Paint zonePaint = new Paint();
+            zonePaint.SetARGB(200, 255, 255, 255);
+            zonePaint.SetStyle(Paint.Style.FillAndStroke);
+            zonePaint.AntiAlias = true;
+
+            Path zone = new Path();
+            zone.MoveTo(x[0], y[0]);
+
+            for (int i = 1; i < x.Length; i++)
+            {
+                zone.LineTo(x[i], y[i]);
+            }
+            zone.LineTo(x[0], y[0]);
+            zone.Close();
+            canvas.DrawPath(zone, zonePaint);
         }
     }
 }
