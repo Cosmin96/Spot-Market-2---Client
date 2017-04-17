@@ -62,14 +62,14 @@ namespace Spot_Market
             string data = Intent.GetStringExtra("Data");
             if (data == "bicycle")
             {
-                int[] x = new int[] { 100, 200, 400 };
-                int[] y = new int[] { 100, 150, 50 };
+                int[] x = new int[] { 185, 225, 252, 325, 325, 185 };
+                int[] y = new int[] { 40, 40, 38, 38, 115, 115};
                 highlightZone(x, y);
             }
             if (data == "book")
             {
-                int[] x = new int[] { 400, 200, 400, 325 };
-                int[] y = new int[] { 100, 150, 400, 200 };
+                int[] x = new int[] { 65, 184, 184, 186, 186, 65 };
+                int[] y = new int[] { 41, 41, 116, 116, 179, 179 };
                 highlightZone(x, y);
             }
 
@@ -98,7 +98,7 @@ namespace Spot_Market
         public static void highlightZone(int[] x, int[] y)
         {
             Paint zonePaint = new Paint();
-            zonePaint.SetARGB(200, 255, 255, 255);
+            zonePaint.SetARGB(130, 255, 255, 255);
             zonePaint.SetStyle(Paint.Style.FillAndStroke);
             zonePaint.AntiAlias = true;
 
