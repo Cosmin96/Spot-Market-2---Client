@@ -9,7 +9,6 @@
     <ImageView
         android:layout_width="wrap_content"
         android:id="@+id/imageView1"
-        android:src="@drawable/map"
         android:layout_height="200dp"
         android:layout_marginTop="50dp" />
     <TextView

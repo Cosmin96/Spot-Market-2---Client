@@ -49,8 +49,17 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Estimote.Android, Version=1.0.8.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Estimote.Android.0.11.0.1\lib\MonoAndroid43\Xamarin.Estimote.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeaconsFoundEventArgs.cs" />
+    <Compile Include="BeaconOnMap.cs" />
+    <Compile Include="Position.cs" />
+    <Compile Include="FindAllBeacons.cs" />
+    <Compile Include="BeaconFinder.cs" />
     <Compile Include="Register.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Map.cs" />
@@ -60,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
+    <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\Register.axml">
@@ -106,6 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\map2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

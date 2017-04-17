@@ -54,10 +54,13 @@ namespace Spot_Market
 			public const int map = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int map_beacons = 2130837507;
+			public const int map2 = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int redButton = 2130837508;
+			public const int map_beacons = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int redButton = 2130837509;
 			
 			static Drawable()
 			{
@@ -149,11 +152,38 @@ namespace Spot_Market
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7f04000a
+			public const int ApplicationName = 2130968586;
+			
+			// aapt resource value: 0x7f040009
+			public const int Hello = 2130968585;
 			
 			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			public const int error_no_bluetooth_enabled = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int error_no_bluetooth_le = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int error_no_location_permission = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int requesting_location_access = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int requesting_location_access_cancel = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int requesting_location_access_ok = 2130968581;
+			
+			// aapt resource value: 0x7f040006
+			public const int requesting_location_access_rationale = 2130968582;
+			
+			// aapt resource value: 0x7f040007
+			public const int requesting_location_permission = 2130968583;
+			
+			// aapt resource value: 0x7f040008
+			public const int requesting_location_permission_rationale = 2130968584;
 			
 			static String()
 			{
@@ -169,7 +199,10 @@ namespace Spot_Market
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int button_text = 2131034112;
+			public const int Theme_Transparent = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int button_text = 2131034113;
 			
 			static Style()
 			{
