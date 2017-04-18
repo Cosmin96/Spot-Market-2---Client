@@ -98,20 +98,31 @@ namespace Spot_Market
         public static void highlightZone(int[] x, int[] y)
         {
             Paint zonePaint = new Paint();
-            zonePaint.SetARGB(130, 255, 255, 255);
+            zonePaint.SetARGB(255, 0, 156, 222);
             zonePaint.SetStyle(Paint.Style.FillAndStroke);
             zonePaint.AntiAlias = true;
 
+            Paint contourPaint = new Paint();
+            contourPaint.SetARGB(255, 255, 0, 0);
+            contourPaint.SetStyle(Paint.Style.Stroke);
+            contourPaint.AntiAlias = true;
+
             Path zone = new Path();
+            Path contour = new Path();
+
             zone.MoveTo(x[0], y[0]);
+            contour.MoveTo(x[0], y[0]);
 
             for (int i = 1; i < x.Length; i++)
             {
                 zone.LineTo(x[i], y[i]);
+                contour.LineTo(x[i], y[i]);
             }
             zone.LineTo(x[0], y[0]);
+            contour.LineTo(x[0], y[0]);
             zone.Close();
             canvas.DrawPath(zone, zonePaint);
+            canvas.DrawPath(contour, contourPaint);
         }
     }
 }
