@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copied from the example provided by Xamarin along with EstimoteSdk: https://components.xamarin.com/view/estimotesdkandroid
+// Used for beacon ranging
+using System;
 
 using Android.Content;
 using Android.Util;
